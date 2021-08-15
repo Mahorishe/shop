@@ -8,7 +8,7 @@ class Film < Product
         lines = File.readlines(file, chomp: true)
         self.new(
           title:    lines[0],
-          director: lines[1],
+          producer: lines[1],
           year:     lines[2].to_i,
           price:    lines[3].to_i,
           amount:   lines[4].to_i
