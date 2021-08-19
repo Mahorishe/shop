@@ -31,6 +31,7 @@ class Film < Product
 
   def update(params)
     super
+
     @title = params[:title] if params[:title]
     @producer = params[:producer] if params[:producer]
     @year = params[:year] if params[:year]
